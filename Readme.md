@@ -109,7 +109,7 @@ time="2025-01-12T21:28:22Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-com
 
 # Development
 
-## [1] Install MSSQL Server 2019 on Microsoft Windows 10 Enterprise Edition (Development Phase)
+## Install MSSQL Server 2019 on Microsoft Windows 10 Enterprise Edition (Development Phase)
 
 In order to run the application an MSSQL Server database need to be setup.
 The database is located on the local host folder C:\JBA. The MSSQL container need to mount this folder (C:\JBA) to (/JBADatabase). This is important for the operation of the database from the remote application (pdtapp).
@@ -164,7 +164,7 @@ Once successful the container shell will be entered. Type exit to exit
     Password: MSSQLServerPassword#123 \
     Click Connect
 
-## [2] The .Net 8 Precipitation Data Transofrm Application (Development Phase)
+## Precipitation Data Transofrm Application .Net 8 (Development Phase)
 
 The Precipitation Data Transform application is developed with .NET 8. It suppoert Docker Container for Linux containers. Also, it can be run withouth the container support.
 
