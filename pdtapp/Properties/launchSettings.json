@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "pdtapp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

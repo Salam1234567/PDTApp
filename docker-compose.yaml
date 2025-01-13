@@ -1,0 +1,37 @@
+version: "3"
+services:
+  pdtapp:
+    build:
+      context: .
+      dockerfile: pdtapp-dockerfile
+    container_name: pdtapp
+
+    volumes:
+      - type: bind
+        source: C:\JBAData
+        target: /JBAData
+
+    ports:
+      - "8000:80"
+    depends_on:
+      - sql_2019_1436
+    networks:
+      - pdtconnection
+  sql_2019_1436:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    container_name: sql_2019_1436
+    environment:
+      SA_PASSWORD: "MSSQLServerPassword#123"
+      ACCEPT_EULA: "Y"
+      UserID: "sa"
+      MSSQL_PID: "Enterprise"
+    ports:
+      - "1436:1433"
+    volumes:
+      - type: bind
+        source: C:\JBA
+        target: /JBADatabase
+    networks:
+      - pdtconnection
+networks:
+  pdtconnection:
