@@ -1,6 +1,6 @@
 # Local Deployment
 
-To deploy the application on the local host machine, a Dokcer Desktop should \ be installed and running in Linux container mode. Open a cmd command window with administrator privileges. Navigate to the C:\JBA\JBAPDT8L folder and perform the following steps.
+To deploy the application on the local host machine, a Dokcer Desktop should be installed and running in Linux container mode. Open a cmd command window with administrator privileges. Navigate to the C:\JBA\JBAPDT8L folder and perform the following steps.
 
 Perform the following to run the application:
 
