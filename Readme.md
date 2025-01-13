@@ -13,7 +13,7 @@ C:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  u
 This should run the application and produces an output to indicate the successful compilation and running of the application. Similar to the following output
 
 ```
-CC:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  up --force-recreate --detach
+C:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  up --force-recreate --detach
 time="2025-01-11T14:00:39Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-compose.yaml: `version` is obsolete"
 2025/01/11 14:00:39 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
 [+] Building 0.0s (0/0)  docker:default
