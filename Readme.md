@@ -109,7 +109,7 @@ time="2025-01-12T21:28:22Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-com
 
 # Development
 
-## Install MSSQL Server 2019 on Microsoft Windows 10 Enterprise Edition (Development Phase)
+## Install MS SQL Server 2019 on Microsoft Windows 10 Enterprise Edition (Development Phase)
 
 In order to run the application an MSSQL Server database need to be setup.
 The database is located on the local host folder C:\JBA. The MSSQL container need to mount this folder (C:\JBA) to (/JBADatabase). This is important for the operation of the database from the remote application (pdtapp).
