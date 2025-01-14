@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pdtapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+115380d55c5dc484e1b2123a51b4ac053d46b8b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69200934b77a79139d7feac4778607e48a572e65")]
 [assembly: System.Reflection.AssemblyProductAttribute("pdtapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pdtapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pdtapp", "PDTApp\pdtapp.csproj", "{C722F338-7170-43C4-8A62-8B99C45D2722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pdtapp-test", "pdtapp-test\pdtapp-test.csproj", "{041CFC29-B8AF-48BB-BB90-626186CB9B77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C722F338-7170-43C4-8A62-8B99C45D2722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C722F338-7170-43C4-8A62-8B99C45D2722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C722F338-7170-43C4-8A62-8B99C45D2722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041CFC29-B8AF-48BB-BB90-626186CB9B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041CFC29-B8AF-48BB-BB90-626186CB9B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041CFC29-B8AF-48BB-BB90-626186CB9B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041CFC29-B8AF-48BB-BB90-626186CB9B77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Eknctlmms0=",
+  "dgSpecHash": "B5IZOxSBZ1w=",
   "success": true,
-  "projectFilePath": "C:\\SC\\JBA\\JBAPDT8L\\PDTApp\\pdtapp.csproj",
+  "projectFilePath": "H:\\Plauralsight\\Docker Getting Started\\PDTApp\\PDTApp\\pdtapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Salam\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Salam\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

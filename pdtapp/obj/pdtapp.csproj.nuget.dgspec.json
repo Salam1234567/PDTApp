@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SC\\JBA\\JBAPDT8L\\PDTApp\\pdtapp.csproj": {}
+    "H:\\Plauralsight\\Docker Getting Started\\PDTApp\\PDTApp\\pdtapp.csproj": {}
   },
   "projects": {
-    "C:\\SC\\JBA\\JBAPDT8L\\PDTApp\\pdtapp.csproj": {
+    "H:\\Plauralsight\\Docker Getting Started\\PDTApp\\PDTApp\\pdtapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SC\\JBA\\JBAPDT8L\\PDTApp\\pdtapp.csproj",
+        "projectUniqueName": "H:\\Plauralsight\\Docker Getting Started\\PDTApp\\PDTApp\\pdtapp.csproj",
         "projectName": "pdtapp",
-        "projectPath": "C:\\SC\\JBA\\JBAPDT8L\\PDTApp\\pdtapp.csproj",
+        "projectPath": "H:\\Plauralsight\\Docker Getting Started\\PDTApp\\PDTApp\\pdtapp.csproj",
         "packagesPath": "C:\\Users\\Salam\\.nuget\\packages\\",
-        "outputPath": "C:\\SC\\JBA\\JBAPDT8L\\PDTApp\\obj\\",
+        "outputPath": "H:\\Plauralsight\\Docker Getting Started\\PDTApp\\PDTApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
