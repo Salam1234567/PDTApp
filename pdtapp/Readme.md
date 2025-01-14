@@ -13,37 +13,99 @@ C:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  u
 This should run the application and produces an output to indicate the successful compilation and running of the application. Similar to the following output
 
 ```
-C:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  up --force-recreate --detach
-time="2025-01-12T18:12:46Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-compose.yaml: `version` is obsolete"
-[+] Building 117.2s (18/18) FINISHED                                                                                                                                                              docker:default
- => [pdtapp internal] load build definition from pdtapp-dockerfile                                                                                                                                          0.6s
- => => transferring dockerfile: 1.45kB                                                                                                                                                                      0.0s
- => [pdtapp internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0                                                                                                                                    1.6s
- => [pdtapp internal] load metadata for mcr.microsoft.com/dotnet/runtime:8.0                                                                                                                                0.0s
- => [pdtapp internal] load .dockerignore                                                                                                                                                                    0.3s
- => => transferring context: 464B                                                                                                                                                                           0.0s
- => [pdtapp build 1/7] FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:f25e4f51fa06e3b14af1a1135013a3e96055b76caa0e76afc0096d64a77879fd                                                                        0.0s
- => [pdtapp base 1/2] FROM mcr.microsoft.com/dotnet/runtime:8.0                                                                                                                                             0.0s
- => [pdtapp internal] load build context                                                                                                                                                                    0.7s
- => => transferring context: 52.73kB                                                                                                                                                                        0.3s
- => CACHED [pdtapp build 2/7] WORKDIR /src                                                                                                                                                                  0.0s
- => [pdtapp build 3/7] COPY [pdtapp/pdtapp.csproj, pdtapp/]                                                                                                                                                 3.2s
- => [pdtapp build 4/7] RUN dotnet restore "./pdtapp/pdtapp.csproj"   --interactive                                                                                                                         60.9s
- => [pdtapp build 5/7] COPY . .                                                                                                                                                                             4.4s
- => [pdtapp build 6/7] WORKDIR /src/pdtapp                                                                                                                                                                  2.6s
- => [pdtapp build 7/7] RUN dotnet build "./pdtapp.csproj" -c %BUILD_CONFIGURATION% -o /app/build                                                                                                           16.5s
- => [pdtapp publish 1/1] RUN dotnet publish "./pdtapp.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false                                                                                 11.8s
- => CACHED [pdtapp base 2/2] WORKDIR /app                                                                                                                                                                   0.0s
- => CACHED [pdtapp final 1/2] WORKDIR /app                                                                                                                                                                  0.0s
- => [pdtapp final 2/2] COPY --from=publish /app/publish .                                                                                                                                                   4.6s
- => [pdtapp] exporting to image                                                                                                                                                                             3.1s
- => => exporting layers                                                                                                                                                                                     2.1s
- => => writing image sha256:dc5f52c151316a16028ed59df8777086c8ac5646075a9c68b3b634afdd595c35                                                                                                                0.1s
- => => naming to docker.io/library/jbapdt8l-pdtapp                                                                                                                                                          0.2s
+CC:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  up --force-recreate --detach
+time="2025-01-11T14:00:39Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-compose.yaml: `version` is obsolete"
+2025/01/11 14:00:39 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
+[+] Building 0.0s (0/0)  docker:default
+[+] Building 42.2s (18/18) FINISHED                                                                                           docker:default
+ => [pdtapp internal] load build definition from PDTAppDockerfile                                                                       1.0s
+ => => transferring dockerfile: 1.45kB                                                                                                  0.0s
+ => [pdtapp internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0                                                                1.7s
+ => [pdtapp internal] load metadata for mcr.microsoft.com/dotnet/runtime:8.0                                                            0.0s
+ => [pdtapp internal] load .dockerignore                                                                                                1.0s
+ => => transferring context: 464B                                                                                                       0.0s
+ => [pdtapp build 1/7] FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:f25e4f51fa06e3b14af1a1135013a3e96055b76caa0e76afc0096d64a77879fd    0.0s
+ => [pdtapp internal] load build context                                                                                                0.6s
+ => => transferring context: 2.52kB                                                                                                     0.0s
+ => [pdtapp base 1/2] FROM mcr.microsoft.com/dotnet/runtime:8.0                                                                         0.0s
+ => CACHED [pdtapp build 2/7] WORKDIR /src                                                                                              0.0s
+ => CACHED [pdtapp build 3/7] COPY [pdtapp/pdtapp.csproj, pdtapp/]                                                                      0.0s
+ => CACHED [pdtapp build 4/7] RUN dotnet restore "./pdtapp/pdtapp.csproj"   --interactive                                               0.0s
+ => [pdtapp build 5/7] COPY . .                                                                                                         3.7s
+ => [pdtapp build 6/7] WORKDIR /src/pdtapp                                                                                              3.3s
+ => [pdtapp build 7/7] RUN dotnet build "./pdtapp.csproj" -c %BUILD_CONFIGURATION% -o /app/build                                       13.7s
+ => [pdtapp publish 1/1] RUN dotnet publish "./pdtapp.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false             11.1s
+ => CACHED [pdtapp base 2/2] WORKDIR /app                                                                                               0.0s
+ => CACHED [pdtapp final 1/2] WORKDIR /app                                                                                              0.0s
+ => CACHED [pdtapp final 2/2] COPY --from=publish /app/publish .                                                                        0.0s
+ => [pdtapp] exporting to image                                                                                                         1.0s
+ => => exporting layers                                                                                                                 0.0s
+ => => writing image sha256:d75ec83dbe3251665a2469cacfaf3ddfeea766c9415d65794690cb26d85bfd14                                            0.3s
+ => => naming to docker.io/library/jbapdt8l-pdtapp                                                                                      0.3s
 [+] Running 3/3
+ ✔ Network jbapdt8l_pdtconnection  Created                                                                                              2.3s
+ ✔ Container sql_2019_1436         Started                                                                                             12.1s
+ ✔ Container pdtapp                Started                                                                                             14.4s
 ```
 
-- Open the Docker Desktop Console and confirm the appliation is running. This should
+- Open the Docker Desktop Console and confirm the appliation is running. This should show the composed solution with a pdtapp and sal_2019_1436 containers running. Navigate to the Logs view of each container to see the logged messages.
+
+- To shut down the solution application run the following command from the cmd consle window:
+
+```
+docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  down
+```
+
+The output of performing the above command should be similar to the following:
+
+```
+C:\SC\JBA\JBAPDT8L>docker-compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml"  down
+time="2025-01-11T14:10:58Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-compose.yaml: `version` is obsolete"
+[+] Running 3/3
+ ✔ Container pdtapp                Removed                                                                                             11.1s
+ ✔ Container sql_2019_1436         Removed                                                                                             20.1s
+ ✔ Network jbapdt8l_pdtconnection  Removed
+
+```
+
+To build the application from the command window, perfrom the follwoing Docker command:
+
+```
+docker compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml" --project-directory "C:/SC/JBA/JBAPDT8L" build
+```
+
+The output show be similar to the following:
+
+```
+C:\SC\JBA\JBAPDT8L>docker compose -f "C:/SC/JBA/JBAPDT8L/docker-compose.yaml" --project-directory "C:/SC/JBA/JBAPDT8L" build
+time="2025-01-12T21:28:22Z" level=warning msg="C:\\SC\\JBA\\JBAPDT8L\\docker-compose.yaml: `version` is obsolete"
+[+] Building 0.0s (0/0)  docker:default
+[+] Building 57.0s (18/18) FINISHED                                                                                                                          docker:default
+ => [pdtapp internal] load build definition from pdtapp-dockerfile                                                                                                     0.4s
+ => => transferring dockerfile: 1.45kB                                                                                                                                 0.0s
+ => [pdtapp internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0                                                                                               1.2s
+ => [pdtapp internal] load metadata for mcr.microsoft.com/dotnet/runtime:8.0                                                                                           0.0s
+ => [pdtapp internal] load .dockerignore                                                                                                                               0.9s
+ => => transferring context: 464B                                                                                                                                      0.0s
+ => [pdtapp build 1/7] FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:f25e4f51fa06e3b14af1a1135013a3e96055b76caa0e76afc0096d64a77879fd                                   0.0s
+ => [pdtapp base 1/2] FROM mcr.microsoft.com/dotnet/runtime:8.0                                                                                                        0.0s
+ => [pdtapp internal] load build context                                                                                                                               0.4s
+ => => transferring context: 26.48kB                                                                                                                                   0.1s
+ => CACHED [pdtapp build 2/7] WORKDIR /src                                                                                                                             0.0s
+ => CACHED [pdtapp build 3/7] COPY [pdtapp/pdtapp.csproj, pdtapp/]                                                                                                     0.0s
+ => CACHED [pdtapp build 4/7] RUN dotnet restore "./pdtapp/pdtapp.csproj"   --interactive                                                                              0.0s
+ => [pdtapp build 5/7] COPY . .                                                                                                                                        2.7s
+ => [pdtapp build 6/7] WORKDIR /src/pdtapp                                                                                                                             2.9s
+ => [pdtapp build 7/7] RUN dotnet build "./pdtapp.csproj" -c %BUILD_CONFIGURATION% -o /app/build                                                                      15.8s
+ => [pdtapp publish 1/1] RUN dotnet publish "./pdtapp.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false                                             8.8s
+ => CACHED [pdtapp base 2/2] WORKDIR /app                                                                                                                              0.0s
+ => CACHED [pdtapp final 1/2] WORKDIR /app                                                                                                                             0.0s
+ => [pdtapp final 2/2] COPY --from=publish /app/publish .                                                                                                              3.9s
+ => [pdtapp] exporting to image                                                                                                                                        5.1s
+ => => exporting layers                                                                                                                                                3.5s
+ => => writing image sha256:49fd33d2b240fed22a57b6b2c2b3e12f6f3bb94f082ea637a31dceb7934259c1                                                                           0.2s
+ => => naming to docker.io/library/jbapdt8l-pdtapp
+```
 
 # Development
 
