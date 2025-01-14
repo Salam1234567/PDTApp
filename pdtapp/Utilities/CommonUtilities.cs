@@ -38,7 +38,7 @@ namespace pdtapp.Utilities
         public static readonly string DbConnection = "DefaultConnection";
 
         // The appsetting.json file contains the DefaultConnection SQL connection string
-        // For development time uncomment the localhost connection string and the comment out the "sql-2019_1436"
+        // For development time uncomment the localhost connection string and then comment out the "sql_2019_1436"
         // connection string to enable debugging and working with the containerised SQL Server on the local host.
         // The server should be running.
         public static readonly string ConfigurationFile = "appsettings.json";
