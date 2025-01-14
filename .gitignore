@@ -18,7 +18,9 @@
 x64/
 [Bb]in/
 [Oo]bj/
-
+pdtapp/bin/*
+pdtapp/obj/*
+.vs/*
 
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
@@ -226,3 +228,12 @@ AppPackages/
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
+/.vs/PDTApp/DesignTimeBuild/.dtbcache.v2
+/.vs/PDTApp/FileContentIndex/265434e0-e6bc-49ac-b536-060db1308604.vsidx
+/pdtapp/obj/Release/net8.0/pdtapp.AssemblyInfo.cs
+/pdtapp/obj/Release/net8.0/pdtapp.AssemblyInfoInputs.cache
+/pdtapp/obj/Release/net8.0/pdtapp.assets.cache
+/pdtapp/obj/Release/net8.0/pdtapp.GeneratedMSBuildEditorConfig.editorconfig
+/pdtapp/obj/pdtapp.csproj.nuget.dgspec.json
+/pdtapp/obj/project.assets.json
+/pdtapp/obj/project.nuget.cache
